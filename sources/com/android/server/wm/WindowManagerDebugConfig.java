@@ -1,0 +1,100 @@
+package com.android.server.wm;
+
+import com.xiaopeng.util.DebugOption;
+/* loaded from: classes.dex */
+public class WindowManagerDebugConfig {
+    static final boolean DEBUG_ANIM;
+    static final boolean DEBUG_APP_ORIENTATION;
+    static final boolean DEBUG_APP_TRANSITIONS;
+    static final boolean DEBUG_BOOT;
+    static final boolean DEBUG_CONFIGURATION;
+    static final boolean DEBUG_DIM_LAYER;
+    static final boolean DEBUG_DISPLAY;
+    static final boolean DEBUG_DRAG;
+    static final boolean DEBUG_FOCUS_LIGHT;
+    static final boolean DEBUG_INPUT;
+    static final boolean DEBUG_INPUT_METHOD;
+    static final boolean DEBUG_KEEP_SCREEN_ON = false;
+    static final boolean DEBUG_KEYGUARD;
+    static final boolean DEBUG_LAYERS;
+    static final boolean DEBUG_LAYOUT;
+    static final boolean DEBUG_LAYOUT_REPEATS;
+    static final boolean DEBUG_ORIENTATION;
+    static final boolean DEBUG_POWER;
+    static final boolean DEBUG_RECENTS_ANIMATIONS;
+    static final boolean DEBUG_REMOTE_ANIMATIONS;
+    static final boolean DEBUG_SCREENSHOT;
+    static final boolean DEBUG_SCREEN_ON;
+    static final boolean DEBUG_STACK;
+    static final boolean DEBUG_STARTING_WINDOW;
+    static final boolean DEBUG_STARTING_WINDOW_VERBOSE;
+    static final boolean DEBUG_TASK_MOVEMENT;
+    static final boolean DEBUG_TASK_POSITIONING;
+    static final boolean DEBUG_TOKEN_MOVEMENT;
+    static final boolean DEBUG_UNKNOWN_APP_VISIBILITY;
+    static final boolean DEBUG_VISIBILITY;
+    static final boolean DEBUG_WALLPAPER;
+    static final boolean DEBUG_WALLPAPER_LIGHT;
+    static final boolean DEBUG_WINDOW_CROP;
+    static final boolean DEBUG_WINDOW_MOVEMENT;
+    static final boolean DEBUG_WINDOW_TRACE;
+    static final boolean SHOW_LIGHT_TRANSACTIONS;
+    static final boolean SHOW_STACK_CRAWLS;
+    static final boolean SHOW_SURFACE_ALLOC;
+    static final boolean SHOW_TRANSACTIONS;
+    static final boolean SHOW_VERBOSE_TRANSACTIONS;
+    static final String TAG_KEEP_SCREEN_ON = "DebugKeepScreenOn";
+    static final boolean TAG_WITH_CLASS_NAME = false;
+    static final String TAG_WM = "WindowManager";
+    static final boolean DEBUG_ALL = DebugOption.DEBUG_WM;
+    static final boolean DEBUG_RESIZE = DEBUG_ALL;
+    static final boolean DEBUG = DEBUG_ALL;
+    static final boolean DEBUG_ADD_REMOVE = DEBUG_ALL;
+    static final boolean DEBUG_FOCUS = DEBUG_ALL;
+
+    static {
+        boolean z = true;
+        DEBUG_FOCUS_LIGHT = DEBUG_FOCUS || DEBUG_ALL;
+        DEBUG_ANIM = DEBUG_ALL;
+        DEBUG_KEYGUARD = DEBUG_ALL;
+        DEBUG_LAYOUT = DEBUG_ALL;
+        DEBUG_LAYERS = DEBUG_ALL;
+        DEBUG_INPUT = DEBUG_ALL;
+        DEBUG_INPUT_METHOD = DEBUG_ALL;
+        DEBUG_VISIBILITY = DEBUG_ALL;
+        DEBUG_WINDOW_MOVEMENT = DEBUG_ALL;
+        DEBUG_TOKEN_MOVEMENT = DEBUG_ALL;
+        DEBUG_ORIENTATION = DEBUG_ALL;
+        DEBUG_APP_ORIENTATION = DEBUG_ALL;
+        DEBUG_CONFIGURATION = DEBUG_ALL;
+        DEBUG_APP_TRANSITIONS = DEBUG_ALL;
+        DEBUG_STARTING_WINDOW_VERBOSE = DEBUG_ALL;
+        DEBUG_STARTING_WINDOW = DEBUG_STARTING_WINDOW_VERBOSE || DEBUG_ALL;
+        DEBUG_WALLPAPER = DEBUG_ALL;
+        DEBUG_WALLPAPER_LIGHT = DEBUG_WALLPAPER || DEBUG_ALL;
+        DEBUG_DRAG = DEBUG_ALL;
+        DEBUG_SCREEN_ON = DEBUG_ALL;
+        DEBUG_SCREENSHOT = DEBUG_ALL;
+        DEBUG_BOOT = DEBUG_ALL;
+        DEBUG_LAYOUT_REPEATS = DEBUG_ALL;
+        DEBUG_WINDOW_TRACE = DEBUG_ALL;
+        DEBUG_TASK_MOVEMENT = DEBUG_ALL;
+        DEBUG_TASK_POSITIONING = DEBUG_ALL;
+        DEBUG_STACK = DEBUG_ALL;
+        DEBUG_DISPLAY = DEBUG_ALL;
+        DEBUG_POWER = DEBUG_ALL;
+        DEBUG_DIM_LAYER = DEBUG_ALL;
+        SHOW_SURFACE_ALLOC = DEBUG_ALL;
+        SHOW_TRANSACTIONS = DEBUG_ALL;
+        SHOW_VERBOSE_TRANSACTIONS = DEBUG_ALL;
+        SHOW_LIGHT_TRANSACTIONS = SHOW_TRANSACTIONS || DEBUG_ALL;
+        SHOW_STACK_CRAWLS = DEBUG_ALL;
+        DEBUG_WINDOW_CROP = DEBUG_ALL;
+        DEBUG_UNKNOWN_APP_VISIBILITY = DEBUG_ALL;
+        DEBUG_RECENTS_ANIMATIONS = DEBUG_ALL;
+        if (!DEBUG_APP_TRANSITIONS && !DEBUG_ALL) {
+            z = false;
+        }
+        DEBUG_REMOTE_ANIMATIONS = z;
+    }
+}
